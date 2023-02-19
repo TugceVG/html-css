@@ -1,9 +1,4 @@
-@media (min-width: 290px)and(max-width: 979px) {
-}
-
-
 html, body {
-    /* min-width: 290px; */
     color: #4d4e53;
     font-size: 16px;
     background-color: #ffffff;
@@ -21,7 +16,6 @@ main#main-doc {
 
 nav#navbar {
     position: fixed;
-    /* min-width: 290px; */
     top: 0px;
     left: 0px;
     width: 300px;
@@ -50,8 +44,6 @@ nav#navbar {
 
 #navbar li {
     border-top: 1px solid;
-    /* position: relative; */
-    /* width: 100%; */
 }
 
 a.nav-link {
@@ -79,12 +71,36 @@ code {
     font-size: 12.48px;
     text-align: left;
     white-space: pre-line;
-    /* position: relative; */
-    /* word-break: normal; */
-    /* word-wrap: normal; */
     line-height: 2;
     background-color: #f7f7f7;
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+    nav#navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+
+    main#main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
+        overflow: auto;
+    }
 }
