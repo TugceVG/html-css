@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    font-family: Barlow Semi Condensed;
+}
+
+.grid-container {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-header h3{
+    font-size: 15px;
+}
+
+.card-header p{
+    opacity: 50%;
+}
+
+.card-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #996ed9;
+    margin-right: 10px;
+}
+
+.card-lead {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card-description{
+    font-size: 15px;
+    line-height: 1.4;
+    opacity: 70%;
+}
+
+.violet {
+    background-color: hsl(263, 55%, 52%);
+    color: #fff;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top 10px right 100px ;
+}
+
+.white{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.blackish-blue {
+    background-color: hsl(219, 29%, 14%);
+    color: #fff;
+}
+
+.grayish-blue {
+    background-color: hsl(217, 19%, 35%);
+    color: #fff;
+}
