@@ -1,0 +1,35 @@
+:root {
+    --light-white: #eaeaea;
+    --dark-blue: #34495e;
+
+    --bg-color: var(--light-white);
+    --text-color: var(--dark-blue);
+}
+
+:root[data-theme="dark"] {
+    --bg-color: var(--dark-blue);
+    --text-color: var(--light-white);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.button-box {
+    width: 20px;
+    height: 10px;
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+}
+
+.button-switch {
+    width: 10px;
+    height: 10px;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.dark {
+    float: right;
+}
